@@ -1,0 +1,737 @@
+<html>
+	<head>
+		<title>new</title>
+		<style>
+			#main{
+				width:100%;
+				height:100%;
+			}
+			#left{
+				height:200px;
+				width:60px;
+				background:#145A32;
+				position:fixed;
+				left:0;
+				top:300px;
+				z-index:200000;
+				border-radius:0 20px 20px 0;
+			}
+			#area1{
+				height:40px;
+				background:#145A32;	
+			}
+			#in1{
+				height:20px;
+				width:1190px;
+				background:#145A32;
+				margin:0 auto;
+				padding:10px 5px;
+				color:#E8F8F5;
+				text-align:right;
+				font-weight:bold;
+			}
+			
+			#in1 a:link,#in1 a:visited{
+				text-decoration:none;
+				color:#E8F8F5;
+				padding:10px 5px;
+			}
+			#in1 a:hover{
+				background:#E8F8F5;	
+				color:#145A32;
+			}
+			#area2{
+				height:110px;
+				background:#E8F8F5;
+				position:sticky;
+				top:0;
+				Z-index:1000000000000;	
+			}
+			#in2{
+				height:70px;
+				width:1160px;
+				background:#E8F8F5;
+				margin:0 auto;
+				padding:20px ;
+				position:sticky;
+				top:0;
+			}
+			#q{
+				height:30px;
+				width:650px;
+				background:#E8F8F5;
+				float:right;
+				padding:20px 5px;
+				color:#145A32;
+			}
+			#q ul{
+				list-style-type:none;
+				position:block;
+				padding:0px;
+				margin:0px;
+			}
+			#q ul li{
+				float:left;
+				padding:8px 10px;
+				background:#E8F8F5;
+			}
+			#q ul li:hover{
+				border-bottom:solid 3px #145A32;	
+				color: #145A32;
+				font-weight:bold;
+			}
+			#area3{
+				height:818px;
+				position:relative;
+				background:white;
+				background-size:cover;	
+				position:relative;
+				overflow:hidden;
+			}
+			#in3{
+				height:80%;
+				width:100%;
+				margin:0 auto;
+				position:absolute;
+				
+				text-shadow:-3px 5px 2px rgba(0,0,0,0.6);
+				text-align:center;
+				color:white;
+				font-size:100px;
+				bottom:-700px;
+				transition:all 1s;
+				background-image:linear-gradient(to bottom,transparent,black);
+			}
+			#area3:hover #in3{
+				display:block;
+				bottom:0px;
+				
+			}
+			#area4{
+				height:600px;
+				
+				background-image:linear-gradient(to bottom,rgba(255,255,255,0.9) 40%,rgba(255,255,255,0.8) 80%,rgba(255,255,255,0.5) 90%,transparent 										100%),url('elephant2.jpg');	
+				background-repeat:no-repeat;
+				background-size:cover;
+			
+			}
+			#in4{
+				height:600px;
+				width:1200px;
+				margin:0 auto;
+			}
+			#w{
+				width:500px;
+				height:400px;
+				background:transparent;
+				float:left;
+				color:#145A32;
+				padding:100px 50px;
+			}
+			#w h1{
+				font-family:arial;
+				font-size:50px;
+				font-weight:bold;
+				text-shadow:-3px 3px 7px rgba(0,0,0,0.6);
+			}
+			#w p{
+				font-size:20px;
+
+			}
+			#e{
+				width:400px;
+				height:400px;
+				float:left;
+				background:transparent;
+				padding:120px 50px;
+				color:#145A32;
+			}
+			#e p{
+				font-size:18px;
+
+			}
+			#e a:link,#e a:visited{
+				color:white;
+				text-decoration:none;
+				padding:10px 25px;
+				background:#145A32;
+				border-radius:50px;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+
+
+			}
+			#e a:hover{
+				background:white;
+				border-radius:50px;		
+				border:solid 1px #145A32;
+				color:#145A32;
+
+
+			}
+			#area5{
+				height:500px;
+				background:white;
+			}
+			#in5{
+				height:500px;
+				width:1200px;
+				background:white;
+				margin:0 auto;
+			}
+			#tt1{
+				background:black;
+				width:300px;
+				height:200px;
+				float:left;
+				margin:98px 48px;
+				border-radius:50px;
+				border:solid 1px #0B5345;
+				overflow:hidden;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+			}
+			#tt1 img{
+				width:300px;
+				height:200px;
+				border-radius:50px;
+			}
+			#tt1 img:hover{
+				width:320px;
+				height:220px;
+			}
+			.t{
+				width:400px;
+				hight:400px;
+				float:left;
+			
+			}
+			#tt2{
+				background:black;
+				width:300px;
+				height:200px;
+				float:left;
+				border-radius:50px;
+				margin:0px 48px;
+				border:solid 1px #0B5345;
+				overflow:hidden;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+			
+			}
+			#tt2 img{
+				width:300px;
+				height:200px;
+				border-radius:50px;
+			}
+			#tt2 img:hover{
+				width:320px;
+				height:220px;
+			}
+			.ttt2{
+				width:300px;
+				height:50px;
+				padding:25px 48px;
+				float:left;
+				text-align:center;
+				border-radius:50px;
+				font-size:25px;	
+				color:#145A32;
+			}
+			.ttt3{
+				width:300px;
+				height:50px;
+				padding:25px 48px;
+				float:left;
+				text-align:center;	
+			}
+			.ttt3 a:link,.ttt3 a:visited{
+
+				color:white;
+				text-decoration:none;
+				padding:10px 25px;
+				background:#145A32;
+				border-radius:50px;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+			}
+			.ttt3 a:hover{
+				background:white;
+				border-radius:50px;		
+				border:solid 1px #145A32;
+				color:#145A32;
+			}
+			#tt3{
+				background:black;
+				width:300px;
+				height:200px;
+				float:left;
+				margin:98px 48px;
+				border-radius:50px;
+				border:solid 1px #0B5345;
+				overflow:hidden;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+			
+				}
+			#tt3 img{
+				width:300px;
+				height:200px;
+				border-radius:50px;
+			}
+			#tt3 img:hover{
+				width:330px;
+				height:220px;
+			}
+			#area6{
+				height:350px;
+				background:white;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);	
+			}
+			#in6{
+				width:1000px;
+				height:250px;
+				background:white;
+				padding:50px 100px;
+				background:white;
+				margin:0 auto;
+			}
+			
+			.la{
+				width:450px;
+				height:231px;
+				float:left;
+				margin:0px 20px;
+				border:solid 1px #0B5345;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);
+
+			}
+			.t2{
+				width:450px;
+				height:200px;
+			}
+			.b2{
+				width:410px;
+				height:160px;
+				background:#E8F8F5;
+				padding:20px;
+				color:#145A32;
+				font-weight:bold;
+			}
+			.t1{
+				width:450px;
+				height:20px;
+				background:#145A32;
+				text-align:center;
+				padding:5px 0px;
+				font-size:20px;
+				color:white;
+			}
+			#area7{
+				height:800px;
+				height:800px;
+				background:green;
+				background:url('tree5.jpg');
+				background-size:cover;	
+			}
+			#in7{
+				width:800px;
+				height:400px;
+				padding:200px;
+				text-align:center;
+				margin:0 auto;
+			}
+			#in7 h2,#in7 p{
+				color:#145A32;
+
+			}
+			#in7 a:link,#in7 a:visited{
+
+				color:white;
+				text-decoration:none;
+				padding:8px 25px;
+				background:#145A32;
+				border-radius:50px;		
+				border:solid 1px white;
+				box-shadow:-2px 1px 40px 0px rgba(0,0,0,0.75);
+			}
+			#in7 a:hover{
+				background:white;
+				border-radius:50px;		
+				border:solid 1px #145A32;
+				color:#145A32;
+			}
+			#gt1{
+				width:600px;
+				height:px;
+				margin-top:px;
+				background:white;
+				float:left;
+			}
+			#area77{
+				height:490px;
+				width:100%;
+				backgroung:white;	
+			}
+			#in77{
+				height:350px;
+				width:1100px;
+				backgroung:white;
+				margin:0 auto;
+				padding:70px 50px; 		
+			}
+			#i7{
+				width:473px;
+				height:220px;
+				background:url('bird5.jpg');
+				backgroung-size:cover;
+				background-repeat:no-repeat;
+				float:left;
+				padding-top:130px;
+				text-align:center;
+				color:#145A32;
+				font-weight:bold;
+			}
+			#i7 a:link,#i7 a:visited{
+
+				color:white;
+				text-decoration:none;
+				padding:8px 25px;
+				background:#145A32;
+				border-radius:50px;
+				box-shadow: 12px 10px 50px 0px rgba(0,0,0,0.75);
+			}
+			#i7 a:hover{
+				background:white;
+				border-radius:50px;		
+				border:solid 1px #145A32;				
+				color:#145A32;
+			}
+			#i72{
+				width:473px;
+				height:220px;
+				background:url('bird4.jpg');
+				backgroung-size:cover;
+				background-repeat:no-repeat;
+				float:right;
+				padding-top:130px;
+				text-align:center;
+				color:#145A32;
+				font-weight:bold;
+			}
+			#i72 a:link,#i72 a:visited{
+
+				color:white;
+				text-decoration:none;
+				padding:8px 25px;
+				background:#145A32;
+				border-radius:50px;
+				box-shadow: 12px 10px 50px 0px rgba(0,0,0,0.75);
+			}
+			#i72 a:hover{
+				background:white;
+				border-radius:50px;		
+				border:solid 1px #145A32;				
+				color:#145A32;
+			}
+			#area8{
+				width:100%;
+				height:500px;
+				background:white;
+				background-size:cover;
+				background-attachment:fixed;
+				box-shadow: 9px 7px 38px 0px rgba(0,0,0,0.75);	
+			}
+			#in8{
+				height:400px;
+				width:1100px;
+				background:white;
+				margin:0 auto;
+				padding:0px 50px 100px 50px;
+			}
+			.mn{
+				width:1100px;
+				height:80px;
+				font-size:25px;	
+				color:#145A32;
+				padding:5px 0px;
+			}
+			.n{
+				width:250px;
+				height:300px;
+				margin:0px 12px;
+				box-shadow:;
+				background:#145A32;
+				float:left;
+				box-shadow: 6px 12px 38px 0px rgba(0,0,0,0.75);	
+			}
+			.n1 img:hover{
+				width:250px;
+				height:250px;
+			}
+			.n1{
+				width:240px;
+				height:240px;
+				border:5px solid #145A32 ;
+				background:white;
+				overflow:hidden;
+			}
+			.n2{
+				width:230px;
+				height:30px;
+				padding:10px ;
+				text-align:center;
+			}
+			.n2 a:link,.n2 a:visited{
+
+				color:#145A32;
+				text-decoration:none;
+				padding:8px 25px;
+				background:white;
+				border-radius:50px;
+			}
+			.n2 a:hover{
+				background:#145A32;
+				border-radius:50px;		
+				border:solid 1px white;
+				color:white;
+			}
+			#area9{
+				height:300px;
+				background:#145A32;	
+			}
+			#in9{
+				height:280px;
+				width:1000px;
+				background:red;
+				margin:0 auto;
+				background:#145A32;
+				padding:10px 100px;
+			}		
+			.down{
+				width:300px;
+				height:280px;
+				float:left;
+				color:#ABEBC6;
+			}
+			.down p:hover,.down h2:hover,.down h3:hover{
+				transform:translateX(15px);
+				color:white;
+				background:;												
+			}
+			.down h2 {
+				color:white;
+
+			}
+			.down h3{
+
+				color:#D5F5E3;
+			}
+			#area10{
+				height:150px;
+				background:#145A32;	
+			}
+			#in10{
+				height:150px;
+				width:1000px;
+				background:red;
+				margin:0 auto;
+				background:#145A32;
+				padding:0px 100px
+			}
+			#u{
+				width:1000;
+				height:3px;
+				background-image:linear-gradient(to right,transparent 0%,#ABEBC6 50%,transparent 100%);
+				text-align:center;		
+			}
+			#uu{
+				width:1000px;
+				heignt:80px;
+				padding:20px 0px;
+				color:white;
+				text-align:center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="left"></div>
+			<div id="area1">
+				<div id="in1" >
+					<a href="tel:5491559378">+91 3435467767 </a>&nbsp &nbsp <a href=""> Safari Booking </a>&nbsp &nbsp <a href=""> Get In Touch</a>
+
+				</div>
+			</div>
+			<div id="area2">
+				<div id="in2" >
+					<img src="hampi.png"/>
+					<div id="q">
+						<ul>
+							<li>Home</li>
+							<li>About</li>
+							<li>Wild Life</li>
+							<li>Travel Info</li>
+							<li>Animal</li>
+							<li>Adoption</li>
+							<li>Hotels</li>
+							<li>Travel Tips</li>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+			<div id="area3">
+					<video width="100%" height="100%" autoplay muted loop>
+						<source src="elephant.mp4" type="video/mp4"/>
+					</video>
+				<div id="in3">
+					<p>Join us on a Journey into<br> The Heart of The Wild!
+					</p>
+					
+				</div>
+			</div>
+			<div id="area4">
+				<div id="in4">
+					<div id="w">
+						<h1>welcom to Atal Bihari Vajpayee zoological park</h1>	
+						<P> it was only zoo in the entire North Karnataka to<br> have tigers, lions and leopards.It is located between<br> Kamalapura and 								Papinayakana halli in Hopset<br> taluk, Bellary district, Karnataka State.,<br>Hampi is located about 10 kms from Hampi Zoo.<P>
+					</div>
+					<div id="e"><P>The land in which the zoo was established was a plain land, the soil being predominantly black cotton soil, during the rainy season 							the whole area becomes slushy which causes inconvenience for the movement of the visitors to the zoo and also causes health hazards 							to the animals housed in the Zoo. The flora found in the Zoo area is Acacia, chundra, Albizzia amara, Azadirachata indica, Dodonia 							viscosa, Lantana camara etc. Since the Zoo is located inside the city area no fauna was naturally found in this area.
+						</p>
+						<br><br><br>
+					<a href="hhkryjsdmtsg">Know More</a>
+
+					</div>
+				</div>
+
+			</div>
+			<div id="area5">
+				<div id="in5">
+					<div class="t">
+						<div id="tt1"><img src="tiger.jpg"/></div>
+					</div>
+					<div class="t">
+						<div class="ttt2"><u><b>GALLERY</b></u></div>
+						<div id="tt2"><img src="w4.jpg"/></div>
+						<div class="ttt3"><br><br><a href="">View Gallery</a></div>
+					</div>
+					<div class="t">
+						<div id="tt3"><img src="image.jpg"/></div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="area6">
+				<div id="in6" >
+					<div class="la">
+						<div class="t1">Location Map</div>
+						<div class="t2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.977793365614!2d76.47917337708378!3d15.26900682248602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77ddea3bdc427%3A0xaddd1ef96e9aa8c0!2sAtal%20Bihari%20Vajapayee%20Zoological%20Park!5e0!3m2!1sen!2sin!4v1700416322299!5m2!1sen!2sin" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<div class="la">
+						<div class="t1">Notice</div>
+						<div class="t2 b2">
+						<P> Now butterfly park open at atal zoo,kamalapur,karnataka <P>
+						<P> </p>
+						</div>
+					</div>
+
+				</div>
+			
+			</div>
+			<div id="area7">
+				<div id="in7" >
+					
+					<h2><u>ADOPTION</u></h2><br>
+
+					<img src="adoption.webp" width="400px" heigh="150px"/><br><br><br>
+					<p>The adoption programme is a novel way to show your support and care for wild animals. By adopting your favourite animal, you will contribute towa 					rds feeding of the animal for one full year (or period of adoption). You will be part of Hampi Zoo’s efforts in wildlife conservation.
+					</P><br><br><br><br>
+					<a href="hfyudfm">Read More</a>
+				</div>
+			</div>
+			<div id="area77">
+				<div id="in77">
+					<div id="i7">
+						<h2>Timing</h2>
+						<p>12PM to 9PM accept sunday</P>
+						<p>9AM to 11PM in sunday</p><br>
+						<a href=""> Know More</a>
+					</div>
+					<div id="i72">
+						<h2>Fee</h2>
+						<p>400 per head accept sunday</P>
+						<P>sunday 500 per head</p><br>
+						<a href=""> Know More</a>
+
+					</div>
+				</div>
+			</div>
+			<div id="area8">
+				<div id="in8" >
+					<div class="mn"><u><P>NEWS & EVENTS</p></u></div>
+					<div class="n">
+						<div class="n1"><img src="p1.jpg" width="240px" height="240px"/></div>
+						<div class="n2"><a href="hfkchd"> know more</a></div>
+					</div>
+					<div class="n">
+						<div class="n1"><img src="p2.jpg" width="240px" height="240px"/></div>
+						<div class="n2"><a href="hfkchd"> know more</a></div>
+					</div>
+					<div class="n">
+						<div class="n1"><img src="p3.jpg" width="240px" height="240px"/></div>
+						<div class="n2"><a href="hfkchd"> know more</a></div>
+					</div>
+					<div class="n">
+						<div class="n1"><img src="p4.jpg" width="240px" height="240px"/></div>
+						<div class="n2"><a href="hfkchd"> know more</a></div>
+					</div>	
+				</div>
+			</div>
+			<div id="area9">
+				<div id="in9" >				
+					<div class="down">
+						<h2>Adderss</h2>
+						<p>Atal Bihari Vajpayee Zoological Park, Kamalapur, Hampi,Karnataka - 583221</p>
+						<p> 08394 - 295289</p>
+						<p>eddcfabvzp81@gmail.com</p><br>
+						<h3>FOLLOW US ON</h3>
+					</div>
+					<div class="down">
+						<h2>ABOUT US</h2>
+						<p>News & Events</p>
+						<p>About Our Zoo</p>
+						<p>Plan for Visit</p>
+						<p>Animal Adoption</p>
+				
+					</div>
+					<div class="down">
+						<h2>PUBLICATION</h2>
+						<p>Master Plan</p>
+						<P>Collection Plan</p>
+						<P>Animal Inventory</p>
+						<P>Annual Report</p>
+						<h3>VISITORS COUNT</h3>
+
+					</div>	
+
+			
+				</div>
+			</div>
+			<div id="area10">
+				<div id="in10" >
+					<div id="u"></div>
+					<div id="uu">
+						Terms & Conditions &nbsp &nbsp 
+						Privacy Policy &nbsp &nbsp 
+						Cancellation & Refund
+						<br>
+						<h2>Design And Develop By:</h2>
+						<P>Milky Mishra</p>
+			 		</div>
+		
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,636 @@
+<html>
+	<head>
+		<title>zoo</title>
+	</head>
+	<style type="text/css">
+		body{
+			width:1200px;
+			
+		}
+		
+		#uparea{
+			width:1100px;
+			height:20px;
+			background:#27AE60;
+			padding:15px 50px;
+		}
+		.p{
+			height:40px;
+			width:550px;
+			float:left;
+			text-align:center;
+			color:white;
+		}
+		.p:hover{
+			color:#ABEBC6;
+			
+		}
+		
+		
+		#logoarea{
+			width:1100px;
+			height:100px;
+			background:#EAFAF1;
+			padding:30px 50px;
+			text-align:center;
+			line-height:15px;
+			word-spacing:15px;
+			text-shadow:-8px 7px 4px rgba(14,6,4,0.21);
+			
+		}
+		#menuarea{
+			width:1080px;
+			height:40px;
+			background:#45b39d;
+			padding:0 60px;
+			position:sticky;
+			top:0px;
+			z-index:2000px;
+		}
+		#menuarea ul {
+			color:#fff;
+			list-style-type:none;
+			display:block;
+			padding:0;
+			margin:0;		
+		}		
+		#menuarea ul li{
+			float:left;
+			padding:10px 15px;
+			background:#45B39D;
+		}
+		#menuarea ul li a:link,#menuarea ul li a:visited{
+			text-decoration:none;	
+			color:white;
+		}
+		#menuarea ul li:hover{
+			background:#73C6B6;
+			border-radius:50px;
+			color:#145A32;
+		}		
+		#menuarea ul li ul{
+			display:none;
+			margin:12.3px 0px;
+		}		
+		#menuarea ul li ul li:hover{
+			border-radius:0px;
+			color:#145A32;
+		}
+		#menuarea ul li:hover ul{
+			display:block;
+			position:absolute;
+		}
+		#menuarea ul li:hover ul li{
+			float:none;
+			border-bottom:solid 2px white;
+			
+		}
+		#slidearea{
+			width:1200px;
+			height:450px;
+			/*background:#564746 url('banner-1.webp') center scroll;*/
+			background-image:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('banner-1.webp');
+		}
+		.sl{
+			width:1200px;
+			height:220px;
+			text-align:center;
+		}
+		.u7{
+			width:1200px;
+			height:120px;
+			text-align:center;
+			padding:50px 0px;
+			color:#fff;
+			font-size:23px;
+			text-shadow:-3px 5px 2px rgba(0,0,0,0.6);
+			line-height:5px;
+			word-spacing:9px;
+		}
+		#l{
+			width:300px;
+			height:150px;
+			margin:35px;	
+			border-radius:50%;
+			border:solid 2px white;
+			float:right;
+			overflow:hidden;
+		}
+		#l img{
+			width:300px;
+			height:150px;	
+			border-radius:50%;
+			
+		}
+		#l img:hover{
+			width:320px;	
+			height:170px;
+			border-radius:50%;
+			
+		}
+		#y{
+			width:300px;
+			height:150px;
+			margin:35px;
+			border-radius:50%;
+			border:solid 2px white;
+			float:left;
+			overflow:hidden;
+		}
+		#y img{
+			width:300px;
+			height:150px;	
+			border-radius:50%;
+
+		}
+		#y img:hover{
+			width:320px;	
+			height:170px;
+			border-radius:50%;
+		}
+		#scroll{
+			width:1200px;
+			height:20px;
+			padding:5px 0px;
+			background:#27AE60;
+			color:white;
+			
+		}
+		#box{
+			width:1200;
+			height:550;
+			background:#654747 url('dw.jpg') scroll;
+			background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(dw.jpg);
+			background-size:cover;
+		}
+		#picarea{
+			width:1000px;
+			height:350px;
+			background:transparent ;
+			padding:100px;
+		}
+		.tr1{	
+			width:460px;
+			height:310px;
+			color:black;
+			text-align:justify;
+			padding:20px;
+			float:left;
+		}
+		.tr1 a:link,.tr1 a:visited{
+
+			color:white;
+			text-decoration:none;
+			padding:10px 25px;
+			background:#145A32;
+			border-radius:50px;
+		}
+		.tr1 a:hover{
+			background:white;
+			border-radius:50px;		
+			border:solid 1px #145A32;
+			color:#145A32;
+		}		
+		.tr{	
+			width:500px;
+			height:350px;
+			float:left;
+			overflow:hidden;
+		}
+		.tr img{
+			width:500px;
+			height:350px;
+			
+		}
+		.tr img:hover{
+			width:490px;
+			height:340px;
+		}
+		#tarea{
+			width:1200px;
+			height:400px;
+			background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(mission.webp) ;
+			background-size:cover;
+			background-attachment:fixed;
+		}
+		#tt1{
+			background:black;
+			width:300px;
+			height:200px;
+			float:left;
+			margin:98px 48px;
+			border-radius:50px;
+			border:solid 1px #0B5345;
+			overflow:hidden;
+		}
+		#tt1 img{
+			width:300px;
+			height:200px;
+			border-radius:50px;
+		}
+		#tt1 img:hover{
+			width:320px;
+			height:220px;
+		}
+		.t{
+			width:400px;
+			hight:400px;
+			float:left;
+			
+		}
+		#tt2{
+			background:black;
+			width:300px;
+			height:200px;
+			float:left;
+			border-radius:50px;
+			margin:0px 48px;
+			border:solid 1px #0B5345;
+			overflow:hidden;
+			
+		}
+		#tt2 img{
+			width:300px;
+			height:200px;
+			border-radius:50px;
+		}
+		#tt2 img:hover{
+			width:320px;
+			height:220px;
+		}
+		.ttt2{
+			width:300px;
+			height:50px;
+			padding:25px 48px;
+			float:left;
+			text-align:center;
+			border-radius:50px;
+			font-size:25px;	
+			color:#145A32;
+		}
+		.ttt3{
+			width:300px;
+			height:50px;
+			padding:25px 48px;
+			float:left;
+			text-align:center;	
+		}
+		.ttt3 a:link,.ttt3 a:visited{
+
+			color:white;
+			text-decoration:none;
+			padding:10px 25px;
+			background:#145A32;
+			border-radius:50px;
+		}
+		.ttt3 a:hover{
+			background:white;
+			border-radius:50px;		
+			border:solid 1px #145A32;
+			color:#145A32;
+		}
+		#tt3{
+			background:black;
+			width:300px;
+			height:200px;
+			float:left;
+			margin:98px 48px;
+			border-radius:50px;
+			border:solid 1px #0B5345;
+			overflow:hidden;
+			
+		}
+		#tt3 img{
+			width:300px;
+			height:200px;
+			border-radius:50px;
+		}
+		#tt3 img:hover{
+			width:330px;
+			height:220px;
+		}
+		#area{
+			width:1000px;
+			height:250px;
+			background-size:cover;
+			background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url('ham.jpg');
+			padding:50px 100px;
+		}
+		.la{
+			width:450px;
+			height:231px;
+			float:left;
+			margin:0px 20px;
+			border:solid 1px #0B5345;
+		}
+		.t2{
+			width:450px;
+			height:200px;
+		}
+		.b2{
+			width:410px;
+			height:160px;
+			background:url('dic.jpg') no-repeat ;
+			background-size:cover;
+			padding:20px;
+			color:#000;
+		}
+		.t1{
+			width:450px;
+			height:20px;
+			background:#145A32;
+			text-align:center;
+			padding:5px 0px;
+			font-size:20px;
+			color:white;
+		}
+		#bt{
+			width:800px;
+			height:500px;
+			background:url('tree5.jpg');
+			padding:200px;
+			text-align:center;
+		}
+		#bt a:link,#bt a:visited{
+
+			color:white;
+			text-decoration:none;
+			padding:8px 25px;
+			background:#145A32;
+			border-radius:50px;		
+			border:solid 1px white;
+		}
+		#bt a:hover{
+			background:white;
+			border-radius:50px;		
+			border:solid 1px #145A32;
+			color:#145A32;
+		}
+		#new{
+			width:1100px;
+			height:400px;
+			background:white;
+			background-size:cover;
+			padding:0px 50px 100px 50px;
+			background-attachment:fixed;
+		}
+		.mn{
+			width:1000px;
+			height:100px;
+			text-align:center;
+			font-size:25px;	
+			color:#145A32;
+			padding-top:20px;
+		}
+		.n{
+			width:250px;
+			height:300px;
+			margin:0px 12px;
+			box-shadow:;
+			background:#145A32;
+			float:left;
+		}
+		.n1 img:hover{
+			width:250px;
+			height:250px;
+		}
+		.n1{
+			width:240px;
+			height:240px;
+			border:5px solid #145A32 ;
+			background:white;
+			overflow:hidden;
+		}
+		.n2{
+			width:230px;
+			height:30px;
+			padding:10px ;
+			text-align:center;
+		}
+		.n2 a:link,.n2 a:visited{
+
+			color:#145A32;
+			text-decoration:none;
+			padding:8px 25px;
+			background:white;
+			border-radius:50px;
+		}
+		.n2 a:hover{
+			background:#145A32;
+			border-radius:50px;		
+			border:solid 1px white;
+			color:white;
+		}
+		#downarea{
+			width:1000px;
+			height:280px;
+			background:#145A32;
+			padding:10px 100px;
+		}
+		.down{
+			width:300px;
+			height:280px;
+			float:left;
+			color:#E8F8F5;
+		}
+		#ut{
+			width:1000px;
+			height:100px;
+			background:#145A32;
+			padding:0px 100px
+		
+		}
+		#u{
+			width:1000;
+			height:3px;
+			background-image:linear-gradient(transparent 0%,#E8F8F5 50%,transparent 0%);
+			text-align:center;		
+		}
+		#uu{
+			width:1000px;
+			heignt:80px;
+			padding:20px 0px;
+			color:#E8F8F5;
+		}
+		@media print{
+			#uparea,#logoarea{
+				display:none;
+			}
+
+		}
+	</style>
+	</head>
+	<body>
+		
+		<div id="uparea">
+			<div class="p">Email:altal589gmail.com</div>
+			<div class="p">Contact:7359826538</div>
+		</div>
+		<div id="logoarea">
+	
+				<h1>ATAL BIHARI VAJPAYEE BIOLOGICAL ZOO</h1>
+				<h3>Kamalapur,Karnataka</h3>
+		</div>
+		
+		<div id="menuarea">
+			<ul>
+				<li><a href="zooabout.html">About</a>
+					<ul>
+						<li>about zoo</li>	
+						<li>Administrative status</li>
+					</ul>
+				</li>
+				<li>Zoo inmates</li>
+				<li>Gallery
+					<ul>
+						<li>Photo gallery</li>	
+						<li>video gallery</li>
+						<li>prass gallery</li>
+					</ul>
+
+
+				</li>
+				<li>Animal health</li>
+				<li>Visiter Amenities</li>
+				<li>Aquaries</li>
+				<li>Tender
+					<ul>
+						<li>Tender</li>	
+						<li>Notice</li>
+						
+					</ul>
+				</li>
+				<li>Fee</li>
+				<li>Animal Adoption</li>
+				<li>More info
+
+					<ul>
+						<li>Book tickets</li>	
+						<li>FRS Tickets</li>	
+						<li>Butterfly park & Aquarum</li>	
+						<li>Kid zone</li>	
+						<li>Zoo Contest</li>
+					</ul>
+				</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div id="slidearea">
+			<div class="u7">
+				<h1>ATAL BIHARI VAJPAYEE BIOLOGICAL ZOO<h1>Karnataka
+			</div>	
+			
+			<div class="sl">
+				<div id="y"><img src="ee.jpg"/></div>
+				<div id="l"><img src="cror.jpg"/></div>	
+			</div>		
+
+		</div>
+		<div id="scroll">
+			<marquee onmouseover="this.stop()" onmouseout="this.start()">Welcom to Atal Bihari Vajpayee biological zoo in Karnataka</marquee>
+		</div>
+		<div id="box">
+			<div id="picarea">
+				<div class="tr1">
+					<h1>ATAL BIHARI VAJPAYEE BIOLOGICAL ZOO,Karnataka</h1>
+					<P>Bhagwan Birsa Biological Park, Ranchi is one of the most beautiful and progressive zoos in India having 104 ha of area of 						mildly undulating topography with natural dry deciduous Sal forests & water bodies in and around it. It provides a natural habitat to wild 				animals to livein peace and harmony with the nature. It is situated on the Ranchi-Ramgarah section of National Highway 33, on the outskirts 				of Ranchi and about 20kms from it.
+					<P><br>
+					<a href="ugdeg">Read More</a>
+
+				</div>
+				<div class="tr"><img src="ab.jpg"/></div>
+			</div>
+		</div>
+		<div id="tarea">
+			<div class="t">
+				<div id="tt1"><img src="tiger.jpg"/></div>
+			</div>
+			<div class="t">
+				<div class="ttt2"><u><b>GALLERY</b></u></div>
+				<div id="tt2"><img src="w4.jpg"/></div>
+				<div class="ttt3"><a href="">View Gallery</a></div>
+			</div>
+			<div class="t">
+				<div id="tt3"><img src="image.jpg"/></div>
+			</div>
+		</div>
+		<div id="area">
+			<div class="la">
+				<div class="t1">Location Map</div>
+				<div class="t2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.977793365614!2d76.47917337708378!3d15.26900682248602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77ddea3bdc427%3A0xaddd1ef96e9aa8c0!2sAtal%20Bihari%20Vajapayee%20Zoological%20Park!5e0!3m2!1sen!2sin!4v1700416322299!5m2!1sen!2sin" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="la">
+				<div class="t1">Notice</div>
+				<div class="t2 b2">
+					 Now butterfly park open at atal zoo,kamalapur,karnataka 
+
+				</div>
+
+			</div>
+		</div>
+		<div id="bt">
+				<h2><u>ADOPTION</u></h2><br>
+
+				<img src="adoption.webp" width="400px" heigh="150px"/><br><br><br>
+				<p>The adoption programme is a novel way to show your support and care for wild animals. By adopting your favourite animal, you will contribute towards feeding of the animal for one full year (or period of adoption). You will be part of Hampi Zoo’s efforts in wildlife conservation.
+				</P><br><br><br><br>
+				<a href="hfyudfm">Read More</a>
+		</div>
+		<div id="new">
+			<div class="mn"><u>NEWS & EVENTS</u></div>
+			<div class="n">
+				<div class="n1"><img src="p1.jpg" width="240px" height="240px"/></div>
+				<div class="n2"><a href="hfkchd"> know more</a></div>
+			</div>
+			<div class="n">
+				<div class="n1"><img src="p2.jpg" width="240px" height="240px"/></div>
+				<div class="n2"><a href="hfkchd"> know more</a></div>
+			</div>
+			<div class="n">
+				<div class="n1"><img src="p3.jpg" width="240px" height="240px"/></div>
+				<div class="n2"><a href="hfkchd"> know more</a></div>
+			</div>
+			<div class="n">
+				<div class="n1"><img src="p4.jpg" width="240px" height="240px"/></div>
+				<div class="n2"><a href="hfkchd"> know more</a></div>
+			</div>	
+
+		</div>
+		<div id="downarea">
+			<div class="down">
+				<h2>Adderss</h2>
+				<p>Atal Bihari Vajpayee Zoological Park, Kamalapur, Hampi,Karnataka - 583221</p>
+				<p> 08394 - 295289</p>
+				<p>eddcfabvzp81@gmail.com</p><br>
+				<h3>FOLLOW US ON</h3>
+			</div>
+			<div class="down">
+				<h2>ABOUT US</h2>
+				<p>News & Events</p>
+				<p>About Our Zoo</p>
+				<p>Plan for Visit</p>
+				<p>Animal Adoption</p>
+				
+			</div>
+			<div class="down">
+				<h2>PUBLICATION</h2>
+				<p>Master Plan</p>
+				<P>Collection Plan</p>
+				<P>Animal Inventory</p>
+				<P>Annual Report</p>
+				<h3>VISITORS COUNT</h3>
+
+			</div>	
+
+		</div>
+		<div id="ut">
+			<div id="u"></div>
+			<div id="uu">
+				Terms & Conditions &nbsp &nbsp 
+				Privacy Policy &nbsp &nbsp 
+				Cancellation & Refund
+			 </div>
+		</div> 
+	</body>
+</html>
